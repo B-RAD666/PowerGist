@@ -16,8 +16,8 @@ $addinDll = "$pathLib\GripDev.PowerGist.Addin.dll"
 $depDll = "$pathLib\GistsApi.dll"
 $iseProfile = "$pshome\Microsoft.PowerShellISE_profile.ps1"
 
-Copy-Item $addinDll $pshome -Force 
-Copy-Item $depDll $pshome -Force 
+Copy-Item $addinDll $pshome -Force
+Copy-Item $depDll $pshome -Force
 
 $line1 = "Add-Type -Path '$pshome\GripDev.PowerGist.Addin.dll'"
 $line2 = "Add-Type -Path '$pshome\GistsApi.dll'"
